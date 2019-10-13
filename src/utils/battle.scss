@@ -1,0 +1,45 @@
+.battleground{
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    .main-battle{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        .droid-side{
+            padding:10%;
+            border-right: 1px solid #fff;
+        }
+    
+        .trooper-side{
+            padding:10%
+        }    
+    }
+    >button{
+        padding:10px;
+        font-size: 20px;
+        font-weight: bold;
+        position: fixed;
+        bottom: 5%;
+        background:rgba(36, 32, 32, 0);
+        color:#fff;
+        border:3px solid transparent;
+        cursor: pointer;
+        outline: none;
+        transition: 0.2s;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        &:hover{
+            border:3px solid red;
+            color:red;  
+        }
+
+        &:active{
+            background: red ;
+            color:#fff;
+        }
+    }
+    
+}   
